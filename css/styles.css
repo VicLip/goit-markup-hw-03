@@ -33,15 +33,73 @@ body {
   color: var(--primary-text-color);
 }
 
+h1 {
+  margin: 0px;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .list {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
 /*  ШАПКА САЙТА */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-utils {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-address:not(:last-child) {
+  margin-right: 30px;
+}
 
 .logo {
   font-family: "Raleway";
@@ -51,6 +109,7 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
+  margin-right: 85px;
 }
 
 .logo > span {
@@ -90,10 +149,27 @@ body {
   /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--title-text-color);
   background: #f5f4fa;
   border-radius: 4px;
+  margin-right: 8px;
+}
+
+.portfolio-nav-buttons {
+  display: flex;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  margin-right: 30px;
+}
+
+.portfolio-list-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .portfolio-title {
@@ -136,12 +212,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-top: 200px;
 }
 
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   /* identical to box height, or 187% */
   display: flex;
   align-items: center;
@@ -149,9 +226,19 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 /* О НАС */
+.about-work-list {
+  display: flex;
+}
+
+.about-work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .subtitle {
   font-weight: 700;
@@ -171,6 +258,14 @@ body {
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.about-us-list {
+  display: flex;
+}
+
+.about-us-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .title {
   font-weight: 700;
@@ -193,6 +288,18 @@ body {
 
 /* НАША КОМАНДА */
 
+.team-section-list {
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+}
+
+.team-section-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -201,6 +308,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-description {
@@ -211,6 +320,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 
 .social-links-item:hover,
@@ -219,6 +329,18 @@ body {
 }
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
+
+.client-list {
+  display: flex;
+}
+
+.client-list-item {
+  align-items: center;
+}
+
+.client-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .client-list-item:hover,
 .client-list-item:focus {
