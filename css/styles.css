@@ -177,6 +177,10 @@ img {
 
 /* ПОРТФОЛИО */
 
+.portfolio-header {
+  margin-bottom: 66px;
+}
+
 .nav-btn {
   font-weight: 500;
   font-size: 16px;
@@ -187,14 +191,17 @@ img {
   color: var(--title-text-color);
   background: var(--background);
   border-radius: 4px;
-  margin-right: 8px;
   border-style: none;
+  padding: 6px 22px;
+}
+
+.nav-btn-list:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-nav-buttons {
   display: flex;
   justify-content: center;
-  padding-top: 66px;
   padding-bottom: 50px;
 }
 
@@ -268,7 +275,8 @@ img {
 /* HERO СЕКЦИЯ */
 
 .hero {
-  margin-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   /* временный background */
   background: var(--background);
 }
@@ -282,7 +290,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -376,6 +383,10 @@ img {
 
 .social-links {
   display: flex;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
 }
 
 .team-section-list-item {
@@ -390,16 +401,17 @@ img {
   margin-right: 30px;
 }
 
-.social-links {
-  justify-content: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 24px;
-}
-
 .social-links-item:not(:last-child) {
   margin-right: 10px;
 }
+
+/* 
+Ховер и фокус для социальных иконок "НАШЕЙ КОМАНДЫ"
+
+.social-links-item:hover,
+.social-links-item:focus {
+  color: var(--accent-color);
+} */
 
 .team-subtitle {
   font-weight: 500;
