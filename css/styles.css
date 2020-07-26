@@ -219,11 +219,11 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--secondary-text-color);
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   box-sizing: border-box;
 
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-0px 1px 1px rgba(0, 0, 0, 0.12);
+    0px 1px 1px rgba(0, 0, 0, 0.12);
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   width: calc((100% - 60px) / 3);
@@ -557,3 +557,4 @@ img {
 .footer-social-links:hover,
 .footer-social-links:focus {
   color: var(--accent-color);
+}
