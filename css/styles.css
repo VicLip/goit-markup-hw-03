@@ -177,8 +177,13 @@ img {
 
 /* ПОРТФОЛИО */
 
-.portfolio-header {
+/* .portfolio-header {
   margin-bottom: 66px;
+} */
+
+.portfolio-nav {
+  padding-top: 66px;
+  padding-bottom: 50px;
 }
 
 .nav-btn {
@@ -202,7 +207,6 @@ img {
 .portfolio-nav-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
 }
 
 .portfolio-list {
@@ -234,7 +238,6 @@ img {
 }
 
 .card-content {
-  display: flex;
   background: var(--secondary-text-color);
   padding-top: 20px;
   padding-right: 24px;
